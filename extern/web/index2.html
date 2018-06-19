@@ -9,30 +9,38 @@ and open the template in the editor.
         <title>Add product</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index2.css">
     </head>
-    <body>
+    <body background="img1.jpg">
       
        
         <form onsubmit="return make_json(this)" method="post">
+            <div id="contact-form">    
          <p id="output">  </p>
-        <h3>Id:</h3><input type="text" name="id"><br>
-        <h3>Product Name:</h3><input type="text" name="productname"><br>
-        <h3>Price:</h3><input type="text" name="price"><br>
-        <h3>Type:</h3><select name="type">
+         <label class="id">Id:</label>
+         <input placeholder="ID" name="id"><br>
+         
+         <label class="product">Product Name:</label>
+         <input placeholder="Product name" name="productname"><br>
+         
+         <label class="price">Price:</label>
+         <input placeholder="Price" name="price"><br>
+         <label class="type">Type:</label>
+         <select class="selection" name="type">
             <option>Cold Coffee</option>
             <option>Hot Coffee</option>
             <option>Snacks</option>
             <option>Drinks</option>
-        </select><br>
+         </select><br><br><br><br>
         
        
             
-        <input type="button" onclick= "Addproduct()" value="Add to product list" name="bt1"><br><br>
+        <input type="button" onclick= "Addproduct()" value="Add to product list" name="bt1" id="addproduct"><br><br>
         
-        <input type=reset value="Do you want to add more" name="bt2"><br><br>
+        <input type=reset value="Do you want to add more" name="bt2" id="addmore"><br><br>
         
-        <input type="submit"  value="submit here" ><br><br>
-        
+        <input type="submit"  value="submit here" id="submit" ><br><br>
+            </div>
        
         </form>
         <script>
@@ -56,6 +64,6 @@ and open the template in the editor.
         }
     </script>
        
-    
+    <a href="index.html"><h4>Back</h4></a>
     </body>
 </html>

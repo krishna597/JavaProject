@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Jun, 2018, 10:06:01 PM
+    Author     : Krishna
+*/
+
+body 
+{
+	
+        
+	font-family: Arial,Helvetica,sans-serif;
+}
+#contact-form {
+	width:260px;
+	margin:0 auto;
+	background-color: #fff;
+	border:2px solid #f3f3f3;
+	padding:50px;
+	margin-top:20px;
+}
+#contact-form label {
+	display:block;
+	margin-bottom:5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	color:#555555;
+}
+#contact-form 
+textarea,
+#contact-form input {
+	padding: 8% 5%;
+	border: none;
+	border-bottom:2px solid #ccc;
+	margin-bottom:25px;
+	width:90%;
+	font-family: Arial,Helvetica,sans-serif;
+
+
+}
+#contact-form input#submit {
+	width:100%;
+	cursor:pointer;
+	margin-bottom:0px;
+	color:#fff;
+	background-color: #5bc0df;
+	border-bottom: 5px solid #46b8db;
+
+}
+
+#contact-form input#addmore {
+	width:100%;
+	cursor:pointer;
+	margin-bottom:0px;
+	color:#fff;
+	background-color: #5bc0df;
+	border-bottom: 5px solid #46b8db;
+
+}
+
+#contact-form input#addproduct {
+	width:100%;
+	cursor:pointer;
+	margin-bottom:0px;
+	color:#fff;
+	background-color: #5bc0df;
+	border-bottom: 5px solid #46b8db;
+
+}
+#contact-form input#submit:hover,
+#contact-form input#submit:focus
+ {
+	background-color: #85d0e7;
+}
+.selection{
+    width:250px;
+    height:30px;
+    
+    
+}
