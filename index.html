@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        
+ <p class="firstline">
+     THERE IS NO LOVE </p>
+
+<P class="secondline">
+MORE SINCERE </p>
+
+<P class="lastline">
+than the love for coffee</p>
+<div >
+  <img class="mySlides w3-animate-right" src="img1.jpg" alt="downloading soon">
+  <img class="mySlides w3-animate-right" src="img2.jpg" >
+  <img class="mySlides w3-animate-right" src="img3.jpg" >
+  <img class="mySlides w3-animate-right" src="img4.jpg" >
+  <img class="mySlides w3-animate-right" src="img5.jpg">
+  <img class="mySlides w3-animate-right" src="img6.jpg" > 
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel,3000);
+}
+
+  </script>
+  
+  <a href="index2.html"><h1 class="addproduct">Add Product</h1> </a>
+    <a href="order.html"><h1 class="order">Order</h1> </a>
+      <a href="bills.html"><h1 class="bill">Bill History</h1> </a>
+  
+      
+<h3 class="bottomline">We love to meet people who want to share their love of coffee at events, private parties and more. Drop us a line or give us a call.</h3>
+  
+  
+    </body>
+</html>
