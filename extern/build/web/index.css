@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Jun, 2018, 3:19:46 PM
+    Author     : Krishna
+*/
+.mySlides{
+   display:none;
+   width:80%;
+   margin-left:140px;
+   height:500px;
+   z-index:-1;
+}
+
+body{
+    background-image:url("back.jpg");
+}
+.firstline{
+    position:absolute;
+    margin-top:170PX;
+    margin-left:190px;
+    font-size:60px;
+    font-family:verdana;
+    color:white
+}
+
+.secondline{
+    position:absolute;margin-top:250PX;margin-left:190px;font-size:60px;font-family:verdana;color:white
+}
+
+.lastline{
+    position:absolute;margin-top: 330PX;margin-left:190px;font-size:55px;font-family:Courier New;color:white
+}
+
+.addproduct{
+    position:absolute;
+    font-size:30px;
+    font-family:Courier New;
+    color:white;
+    margin-left:190px;
+    
+}
+
+.order{
+    position:absolute;
+    font-size:30px;
+    font-family:Courier New;
+    color:white;
+    margin-left:600px;
+    
+}
+
+.bill{
+    position:absolute;
+    font-size:30px;
+    font-family:Courier New;
+    color:white;
+    margin-left:900px;
+    
+}
+
+.bottomline{
+    position:absolute;
+    font-size:30px;
+    font-family:Verdana;
+    color:white;
+    margin-top:100px;
+    align:justify;
+    
+    
+    
+}

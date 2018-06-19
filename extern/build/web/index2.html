@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      
+       
+        <form onsubmit="return make_json(this)" method="post">
+         <p id="output">  </p>
+        <h3>Id:</h3><input type="text" name="id"><br>
+        <h3>Product Name:</h3><input type="text" name="productname"><br>
+        <h3>Price:</h3><input type="text" name="price"><br>
+        <h3>Type:</h3><select name="type">
+            <option>Cold Coffee</option>
+            <option>Hot Coffee</option>
+            <option>Snacks</option>
+            <option>Drinks</option>
+        </select><br>
+        
+       
+            
+        <input type="button" onclick= "Addproduct()" value="Add to product list" name="bt1"><br><br>
+        
+        <input type=reset value="Do you want to add more" name="bt2"><br><br>
+        
+        <input type="submit"  value="submit here" ><br><br>
+        
+       
+        </form>
+        <script>
+            function make_json(form){
+                var json={"ID":form.id.value };
+                var html=JSON.stringify(json);
+                document.getElementById('output').innerHTML=html;
+                return false;
+            }
+            
+        </script>
+ 
+    
+    <script>
+        function Addproduct(){
+    var users=[];
+    users.push(id);
+    var jsonready = JSON.stringify(users);
+    localstorage.setItem('users',jsonready);
+    console.log(JSON.parse(localStorage['users']));
+        }
+    </script>
+       
+    
+    </body>
+</html>
